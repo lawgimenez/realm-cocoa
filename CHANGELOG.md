@@ -50,6 +50,8 @@ x.y.z Release notes (yyyy-MM-dd)
 * Declaring a property as `RealmProperty<AnyRealmValue?>` will now report an
   error during schema discovery rather than doing broken things when the
   property is used.
+* Calling `[realm deleteObjects:dictionary]` on a `RLMDictionary` cleared the
+  dictionary but did not actually delete the objects in the dictionary.
 
 <!-- ### Breaking Changes - ONLY INCLUDE FOR NEW MAJOR version -->
 
